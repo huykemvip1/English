@@ -18,3 +18,8 @@
 	C : là thông lương tương đương chứa được số kết nối cơ sở dữ liệu 
 	a : hệ số tranh chấp (phần có thể tuần tự hóa của quy trình xử lý dữ liệu)
 	b : hệ số kết hợp (chi phí duy trì tính nhất quán trên tất cả các phiên cơ sở dữ liệu đồng thời)
+	
+**** Scaling up , Scaling out 
+
+	Scaling up -> mở rộng theo chiều dọc có nghĩa thêm nguồn vào 1 máy duy nhất 
+	Scaling out -> mở rộng theo chiều ngang là thêm máy -> được ưu tiên và ưu thích nhất
