@@ -66,3 +66,40 @@ tape : băng -> v
 overlap : chồng lên nhau, trùng lặp -> n
 swing : xích đu -> n
       : lung lay -> v
+	  
+	  /***
+	  
+	  <th:block th:each="row,index : ${data.signerRequests}">
+			<div style="margin: 0 auto;  width: 900px; "
+				 th:if="${ (index.count -1) % 4 == 0  && index.size % 4 == 3}">
+				<th:block th:each="row1,index1 : ${data.signerRequests}">
+					<div th:text="${row1.positionName }" style="width: 300px; text-align: center;   float: left;">
+
+					</div>
+				</th:block>
+			</div>
+			<div style="margin: 0 auto; border: #4D70FB 1px solid; width: 300px; "
+				 th:if="${ (index.count -1) % 4 == 0 && index.size % 4 == 1 }">
+				<th:block th:each="row1,index1 : ${data.signerRequests}">
+					<div th:text="${row.positionName }" style="width: 300px; text-align: center;   float: left;">
+
+					</div>
+				</th:block>
+			</div>
+			<div style="margin: 0 auto; border: #4D70FB 1px solid; width: 600px; "
+				 th:if="${ (index.count -1) % 4 == 0 && index.size % 4 == 2}">
+				<th:block th:each="row1,index1 : ${data.signerRequests }">
+					<div th:text="${row.positionName }" style="width: 300px; text-align: center;   float: left;">
+
+					</div>
+				</th:block>
+			</div>
+			<div style="margin: 0 auto; border: #4D70FB 1px solid; width: 1200px; "
+				 th:if="${ (index.count -1) % 4 == 0 && index.size % 4 == 0}">
+				<th:block th:each="row1,index1 : ${data.signerRequests}">
+					<div th:text="${row.positionName}" style="width: 300px; text-align: center;   float: left;">
+
+					</div>
+				</th:block>
+			</div>
+		</th:block>
